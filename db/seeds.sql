@@ -1,2 +1,2 @@
-INSERT TABLE burgers (Burger_Name, Devoured) VALUE (Double Quater Pound King, TRUE);
-INSERT TABLE burgers (Burger_Name, Devoured) VALUE (Whopper, FALSE);
+INSERT INTO burgers (Burger_Name, Devoured) VALUES ("Double Quater Pound King", TRUE);
+INSERT INTO burgers (Burger_Name, Devoured) VALUES ("Whopper", FALSE);
