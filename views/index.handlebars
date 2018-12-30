@@ -2,26 +2,17 @@
 
 <ul>
   {{#each burgers}}
-    <li>
-      <p>{{Burger_Name}}</p>
-    </li>
-  {{/each}}
-</ul>
-
-<ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
+    {{#unless Devoured}}
+      {{> burger/burgers-switch eat=true}}
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Cats that are sleepy!</h2>
 
 <ul>
   {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
+    {{#if Devoured}}
+      {{> burger/burgers-switch eat=false}}
     {{/if}}
   {{/each}}
 </ul>
