@@ -1,7 +1,17 @@
+<h1> Eat-Da-Burger</h1>
+
+
 <ul>
   {{#each burgers}}
     <li>
-      <p>{{Burger_Name}}</p>
+      <p>{{Burger_Name}} <button class="devoured-it">Devoured It!</button></p>
     </li>
   {{/each}}
 </ul>
+
+<textarea class="burger-input"></textarea>
+
+<button class="Submit">Submit</button>
+
+<p class="explanation">Enter the burger you want and click the "submit" button</p>
+<p class="how-to-eat">Click the "Devour It!" button to eat the burger</p>
