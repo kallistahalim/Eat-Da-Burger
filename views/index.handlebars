@@ -2,17 +2,19 @@
 
 <ul>
   {{#each burgers}}
+
     {{#unless Devoured}}
-      {{> burger/burgers-switch eat=true}}
+     {{Burger_Name}}
     {{/unless}}
   {{/each}}
 </ul>
 
 
 <ul>
-  {{#each cats}}
+  {{#each burgers}}
+
     {{#if Devoured}}
-      {{> burger/burgers-switch eat=false}}
+      {{Burger_Name}}
     {{/if}}
   {{/each}}
 </ul>
