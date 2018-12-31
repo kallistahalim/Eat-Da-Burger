@@ -17,10 +17,10 @@ $(function() {
     //   );
     });
   
-    $(".submit").on("submit", function(event) {
+    $(".submit").on("click", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
-  
+        console.log("i did it!")
       var newBurger = {
         Burger_Name: $("#BN").val().trim(),
       };
