@@ -1,18 +1,38 @@
 body {
     margin: auto;
+    background-image: url("/assets/img/burger-background.jpg") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title {
-    font-size: 40px;
+    font-size: 80px;
     font-family: 'Itim', cursive;
+    text-align: center;
+    background: -webkit-linear-gradient(red, yellow, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+
+.not-eat {
+    font-family: 'Itim', cursive;
+    font-size: 30px;
+    color: #387510;
+    width: 40%;
+    display: inline-block;
+    float: left;
     text-align: center;
 }
 
-.not-eat .eat {
+.eat{
     font-family: 'Itim', cursive;
-    float: left;
-    width: 30%;
+    font-size: 30px;
+    color: #387510;
+    width: 40%;
     display: inline-block;
+    text-align: center;
 }
 
 .burger-input {
@@ -22,18 +42,35 @@ body {
     width: 40%;
     height: 80px;
     border-radius: 8px;
+    background: transparent;
+    text-align: center;
+    border-color: yellow;
 }
 
 button {
-    border-radius: 8px !important;
+    border-radius: 8px !important; 
+    font-family: 'Itim', cursive !important;
+    background: transparent;
+    border-color: yellow;
+    color: yellow;
 }
 
-.button-area{
+.button-area {
     /* width: 12%; */
-text-align: center;
-margin: auto;
+    text-align: center;
+    margin: auto;
 }
 
-p{
+p {
+    font-family: 'Itim', cursive;
     text-align: center !important;
+    color: yellow !important; 
+}
+
+.footer {
+    font-family: 'Itim', cursive !important;
+    color: yellowgreen;
+    font-size: 10px;
+    width: 10%;
+    text-align: center;
 }
