@@ -13,7 +13,7 @@ body {
     background: -webkit-linear-gradient(red, yellow, green);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  
+
 }
 
 .not-eat {
@@ -26,7 +26,7 @@ body {
     text-align: center;
 }
 
-.eat{
+.eat {
     font-family: 'Itim', cursive;
     font-size: 30px;
     color: #387510;
@@ -47,12 +47,28 @@ body {
     border-color: yellow;
 }
 
+/* .burger-input:active{
+    border: none;
+    outline: none;
+} */
+
+.burger-input:focus {
+    outline: 0;
+}
+
 button {
-    border-radius: 8px !important; 
+    border-radius: 8px !important;
     font-family: 'Itim', cursive !important;
     background: transparent;
     border-color: yellow;
     color: yellow;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: yellow;
+    color: yellowgreen;
+
 }
 
 .button-area {
@@ -64,7 +80,7 @@ button {
 p {
     font-family: 'Itim', cursive;
     text-align: center !important;
-    color: yellow !important; 
+    color: yellow !important;
 }
 
 .footer {
