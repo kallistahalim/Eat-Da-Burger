@@ -27,6 +27,7 @@ $(function() {
   
       // Send the POST request.
       $.ajax("/api/burgers", {
+        url: "http://localhost:3000",
         type: "POST",
         data: newBurger
       }).then(
