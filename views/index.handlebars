@@ -1,15 +1,16 @@
-<h1> Eat-Da-Burger</h1>
+<h1 class="title mt-5"> Eat-Da-Burger</h1>
 
+<div class="not-eat ml-5">
 <ul>
   {{#each burgers}}
-
     {{#unless Devoured}}
      {{Burger_Name}}
     {{/unless}}
   {{/each}}
 </ul>
+</div>
 
-
+<div class="eat">
 <ul>
   {{#each burgers}}
 
@@ -18,10 +19,12 @@
     {{/if}}
   {{/each}}
 </ul>
+</div>
 
-<textarea class="burger-input"></textarea>
-
-<button class="Submit">Submit</button>
+<textarea class="burger-input ml-auto mr-auto"></textarea>
+<div class="button-area">
+<button class="Submit ml-5 mt-5 mb-5">Submit</button>
+</div>
 
 <p class="explanation">Enter the burger you want and click the "submit" button</p>
 <p class="how-to-eat">Click the "Devour It!" button to eat the burger</p>
