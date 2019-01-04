@@ -45,6 +45,7 @@ body {
     background: transparent;
     text-align: center;
     border-color: yellow;
+    position: absolute center;
 }
 
 /* .burger-input:active{
