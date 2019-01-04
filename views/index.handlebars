@@ -2,32 +2,38 @@
 
 <div class="not-eat m-5">
 <ul>
+  <li>
   {{#each burgers}}
     {{#unless Devoured}}
      {{Burger_Name}}
     {{/unless}}
   {{/each}}
+  </li>
 </ul>
 </div>
 
 <div class="eat m-5">
 <ul>
+  <li>
   {{#each burgers}}
 
     {{#if Devoured}}
       {{Burger_Name}}
     {{/if}}
   {{/each}}
+  </li>
 </ul>
 </div>
 
 <textarea class="burger-input ml-auto mr-auto"></textarea>
 <div class="button-area">
-<button class="Submit m-5">Submit</button>
+<button class="submit m-5">Submit</button>
 </div>
 
 <p class="explanation">Enter the burger you want and click the "submit" button</p>
 <p class="how-to-eat">Click the "Devour It!" button to eat the burger</p>
 
 <footer class="footer">&copy; Kallista Halim 2018</footer>
+
+
 

@@ -21,8 +21,9 @@ $(function() {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
         console.log("i did it!")
+
       var newBurger = {
-        Burger_Name: $("#BN").val().trim(),
+        Burger_Name: $(".burger-input").val().trim(),
       };
   
       // Send the POST request.

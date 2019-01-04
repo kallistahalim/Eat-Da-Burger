@@ -54,13 +54,13 @@ var orm = {
     var queryString = "INSERT INTO " + table;
 
     queryString += " (";
-    queryString += cols.toString();
+    queryString += cols.toString().split(" ").join("_");
     queryString += ") ";
     queryString += "VALUES (";
     queryString += printQuestionMarks(vals.length);
     queryString += ") ";
 
-    console.log(queryString);
+    console.log("lalallala", queryString);
 
     connection.query(queryString, vals, function(err, result) {
       if (err) {
