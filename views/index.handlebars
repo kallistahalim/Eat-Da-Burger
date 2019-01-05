@@ -2,7 +2,6 @@
 
 <div class="not-eat m-5">
 <ul>
-  <li>
   {{#each burgers}}
     {{#unless Devoured}}
      {{Burger_Name}} 
@@ -11,13 +10,12 @@
 	</button>
     {{/unless}}
   {{/each}}
-  </li>
 </ul>
 </div>
 
 <div class="eat m-5">
 <ul>
-  <li>
+  <li class="list">
   {{#each burgers}}
     {{#if Devoured}}
       {{Burger_Name}} 
